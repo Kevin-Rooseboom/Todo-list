@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace TodoList.Core.Entities
 {
-    public class Item
+    public class Item(int id, string title, string description)
     {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
+        public int Id { get; set; } = id;
+        public string Title { get; set; } = title;
+        public string Description { get; set; } = description;
     }
 }
